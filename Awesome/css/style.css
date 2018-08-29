@@ -5,7 +5,27 @@ body {
 }
 
 /* Header */
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
 .aw-main-banner{
     display: block;
     width: 100%;
+}
+
+/* Logo */
+.aw-logo {
+    color: #FFF;
+    font-size: 26px;
+    text-decoration: none;
+    border: solid 2px #FFF;
+    height: 60px;
+    width: 60px;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 100%;
 }
