@@ -43,6 +43,26 @@ header nav ul.aw-navigation li a {
     text-decoration: none;
 }
 
+header nav ul.aw-navigation li:last-child a {
+    padding-right: 0; 
+}
+
+header nav ul.aw-navigation li a:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: #FFF;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+header nav ul.aw-navigation li a:hover:after {
+    width: 100%;
+    opacity: 1;
+}
+
 
 .aw-main-banner{
     display: block;
