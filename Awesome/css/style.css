@@ -1,3 +1,6 @@
+/* Fonts  */
+@import 'fonts.css';
+
 /* General styles */
 body {
     margin: 0;
@@ -8,11 +11,13 @@ body {
 a {
     text-decoration: none;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
 
 h1 {
     color: #FFF;
     font-size: 70px;
-    font-weight: lighter;
 }
 
 h3 {
@@ -20,6 +25,10 @@ h3 {
     margin-top: 0;
     font-size: 40px;
     text-align: center;
+}
+
+h3:first-letter {
+    color: #dca453;
 }
 
 .aw-container {
@@ -140,6 +149,11 @@ header nav ul.aw-navigation li a:hover:after {
     width: 48%;
     margin-top: 25px;
     text-align: center;
+}
+
+#aw-about i {
+    font-size: 45px;
+    color: #dca453;
 }
 
 
