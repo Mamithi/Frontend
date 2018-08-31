@@ -244,7 +244,7 @@ header nav ul.aw-navigation li a:hover:after {
     margin: 15px 0;
 }
 
-.aw-testimonials ul li > p {
+.aw-testimonials ul li>p {
     font-style: italic;
     font-size: 20px;
     color: #ccc;
@@ -276,7 +276,56 @@ header nav ul.aw-navigation li a:hover:after {
 }
 
 .aw-testimonials .aw-arrow:hover {
-    border-color: #dca453; 
+    border-color: #dca453;
+}
+
+/* Contact */
+#aw-contact {
+    background: #f8f8f8;
+}
+
+#aw-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#aw-contact form input:not([type='submit']),
+#aw-contact form textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: solid 1px #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#aw-contact form textarea {
+    height: 100px;
+    resize: none;
+}
+
+#aw-contact form *::-webkit-input-placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+#aw-contact form *::-moz-placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+#aw-contact form *:-ms-input-placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+#aw-contact form *::-moz-input-placeholder {
+    color: #ccc;
+    font-style: italic;
 }
 
 
