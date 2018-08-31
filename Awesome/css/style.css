@@ -11,7 +11,13 @@ body {
 a {
     text-decoration: none;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: normal;
 }
 
@@ -202,6 +208,47 @@ header nav ul.aw-navigation li a:hover:after {
     height: 0;
 }
 
+/* Testimonials */
+#aw-testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aw-testimonials {
+    max-width: 500px;
+}
+
+.aw-testimonials ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    overflow: hidden;
+}
+
+.aw-testimonials ul li {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aw-testimonials ul li .aw-user-data img {
+    border-radius: 100%;
+}
+
+.aw-testimonials ul li .aw-user-name {
+    display: block;
+    margin: 15px 0;
+}
+
+.aw-testimonials ul li > p {
+    font-style: italic;
+    font-size: 20px;
+    color: #ccc;
+    text-align: center;
+}
 
 /* Animations */
 .aw-pulsate {
