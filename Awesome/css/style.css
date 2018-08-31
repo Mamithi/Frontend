@@ -217,6 +217,7 @@ header nav ul.aw-navigation li a:hover:after {
 
 .aw-testimonials {
     max-width: 500px;
+    position: relative;
 }
 
 .aw-testimonials ul {
@@ -249,6 +250,35 @@ header nav ul.aw-navigation li a:hover:after {
     color: #ccc;
     text-align: center;
 }
+
+.aw-testimonials .aw-arrow {
+    display: inline-block;
+    border: solid 3px #eee;
+    padding: 20px;
+    border-width: 0 3px 3px 0;
+    cursor: pointer;
+    transition: border-color .3s ease;
+    -webkit-transition: border-color .3s ease;
+    position: absolute;
+    top: 50%;
+}
+
+.aw-testimonials .aw-arrow.aw-arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    right: 120%;
+}
+
+.aw-testimonials .aw-arrow.aw-arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    left: 120%;
+}
+
+.aw-testimonials .aw-arrow:hover {
+    border-color: #dca453; 
+}
+
 
 /* Animations */
 .aw-pulsate {
