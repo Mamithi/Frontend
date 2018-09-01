@@ -79,7 +79,7 @@
         const openedImage = `<div class='aw-backdrop'><img src='${imgSrc}' alt='' />
                              <span class='aw-backdrop-close'>X</span></div>`;
         
-        document.body.insertAdjacentHTML("beforeend", openedImage);
+        document.body.insertAdjacentHTML ("beforeend", openedImage);
     }
 
     window.addEventListener("scroll", () => {
