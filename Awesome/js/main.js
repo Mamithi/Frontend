@@ -28,7 +28,22 @@
     }
 
     const scrollToSection = sectionId => {
+        let sectionPosition, sectionOffset;
+        const navigationHeight = document.querySelector("header nav").offsetHeight;
+        const pageWidth = window.innerWidth;
 
+        if (sectionId !== '#') {
+            sectionOffset = document.querySelector(sectionId).offsetTop;
+            sectionPosition = pageWidth > mobileWidth ? sectionOffset - navigationHeight : sectionOffset;
+        } else {
+            sectionPosition = 0;
+        }
+
+        window.scrollTo({
+            'behavior': 'smooth',
+            'left': 0,
+            'top': sectionPosition
+        })
     }
 
     window.addEventListener("scroll", () => {
