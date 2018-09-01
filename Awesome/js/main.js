@@ -46,10 +46,28 @@
         })
     }
 
+    const onTestimonialChange = () => {
+        let firstChild, lastChild;
+        const prevArrow = document.querySelector("#aw-testimonials-prev");
+        const nextArrow = document.querySelector("#aw-testimonials-next");
+        const testimonials = document.querySelector(".aw-testimonials ul");
+
+        document.addEventListener("click", () => {
+            if (event.target === prevArrow) {
+                lastChild = testimonials.lastElementChild;
+                testimonials.insertAdjacentElement("afterbegin", lastChild);
+            } else if (event.target === nextArrow) {
+                firstChild = testimonials.firstElementChild;
+                testimonials.insertAdjacentElement("beforeend", firstChild);
+            }
+        })
+    }
+
     window.addEventListener("scroll", () => {
         addMenuBackground();
     })
 
     onNavItemClick();
+    onTestimonialChange();
 
 })();
