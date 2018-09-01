@@ -12,8 +12,29 @@
         }
     }
 
+    const onNavItemClick = () => {
+        const navItemList = document.querySelectorAll(".aw-section-link");
+        const navItems = [...navItemList];
+
+        navItems.forEach(item => {
+            item.addEventListener("click", event => {
+                event.preventDefault();
+
+                const sectionId = event.target.getAttribute("href") || event.target.dataset.href;
+
+                scrollToSection(sectionId);
+            })
+        })
+    }
+
+    const scrollToSection = sectionId => {
+
+    }
+
     window.addEventListener("scroll", () => {
         addMenuBackground();
     })
+
+    onNavItemClick();
 
 })();
