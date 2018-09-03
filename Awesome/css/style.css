@@ -466,3 +466,15 @@ footer .aw-social-icons li a:hover {
         right: 100%;
     }
 }
+
+
+@media all and (max-width: 680px) {
+    header nav {
+        position: absolute;
+
+    }
+
+    header nav.aw-nav-fixed {
+        background: none; 
+    }
+}
