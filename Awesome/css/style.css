@@ -106,6 +106,10 @@ header nav ul.aw-navigation li a:hover:after {
     opacity: 1;
 }
 
+header nav .aw-nav-toggle {
+    display: none;
+}
+
 .aw-header-text {
     position: absolute;
     width: 100%;
@@ -488,7 +492,7 @@ footer .aw-social-icons li a:hover {
         transition: max-height .6s ease;
     }
 
-    ul.aw-navigation.aw-navigation-opened{
+    ul.aw-navigation.aw-navigation-opened {
         max-height: 500px;
         -webkit-transition: max-height 1.3s ease;
         transition: max-height 1.3s ease;
@@ -513,5 +517,11 @@ footer .aw-social-icons li a:hover {
     ul.aw-navigation li:last-child a {
         padding-bottom: 20px; 
         border-bottom: none;
+    }
+
+    header nav .aw-nav-toggle {
+        display: block;
+        color: #fff;
+        font-size: 25px;
     }
 }
