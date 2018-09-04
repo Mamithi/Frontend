@@ -471,14 +471,13 @@ footer .aw-social-icons li a:hover {
     }
 }
 
-
 @media all and (max-width: 680px) {
     header nav {
         position: absolute;
     }
 
     header nav.aw-nav-fixed {
-        background: none; 
+        background: none;
     }
 
     ul.aw-navigation {
@@ -488,16 +487,15 @@ footer .aw-social-icons li a:hover {
         max-height: 0;
         overflow: hidden;
         background: rgba(0, 0, 0, .7);
-        -webkit-transition: max-height .6s ease;
-        transition: max-height .6s ease;
+        -webkit-transition: max-height .4s ease;
+        transition: max-height .4s ease;
     }
 
     ul.aw-navigation.aw-navigation-opened {
         max-height: 500px;
-        -webkit-transition: max-height 1.3s ease;
-        transition: max-height 1.3s ease;
+        -webkit-transition: max-height 1s ease;
+        transition: max-height 1s ease;
     }
-
 
     ul.aw-navigation li {
         padding: 0 15px;
@@ -507,15 +505,15 @@ footer .aw-social-icons li a:hover {
         display: block;
         padding: 10px 0;
         color: #fff;
-        border-bottom: solid 1px #999; 
-
+        border-bottom: solid 1px #999;
     }
 
     ul.aw-navigation li:first-child a {
-        padding-top: 20px; 
+        padding-top: 20px;
     }
+
     ul.aw-navigation li:last-child a {
-        padding-bottom: 20px; 
+        padding-bottom: 20px;
         border-bottom: none;
     }
 
@@ -523,5 +521,46 @@ footer .aw-social-icons li a:hover {
         display: block;
         color: #fff;
         font-size: 25px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .aw-logo {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    h1,
+    h3 {
+        font-size: 35px;
+    }
+
+    .aw-header-text .aw-arrow,
+    .aw-testimonials .aw-arrow {
+        padding: 10px;
+    }
+
+    #aw-about .aw-column {
+        width: 100%;
+    }
+
+    #aw-gallery li {
+        width: 33.33%;
+    }
+
+    .aw-testimonials {
+        max-width: 80%;
+    }
+
+    .aw-testimonials ul li>p {
+        font-style: italic;
+        font-size: 17px;
+    }
+
+    #aw-contact form input:not([type='submit']),
+    #aw-contact form textarea {
+        width: 90%;
+        padding: 12px;
     }
 }
