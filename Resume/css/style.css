@@ -1,7 +1,11 @@
+/* Fonts */
+@import 'fonts.css';
+
+
 body {
     margin: 0;
     padding : 0;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 a {
@@ -10,6 +14,11 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 70px;
 }
 
 .res-container{
@@ -39,6 +48,11 @@ header nav {
     margin: 10px 0;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+}
+
+header nav.res-nav-fixed {
+    margin: 0;
+    background: rgba(0, 0, 0, .5);
 }
 
 header nav ul.res-navigation {
@@ -95,4 +109,72 @@ header nav ul.res-navigation li a:hover:after {
 .res-header-text .res-arrow {
     display: inline-block;
     border: solid 3px #FFF;
+    padding: 20px;
+    border-width: 0 3px 3px 0;
+    cursor: pointer;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+}
+
+.res-header-text .res-arrow:hover {
+    opacity: .7;
+}
+
+/* Logo */
+.res-logo {
+    color: #FFF;
+    font-size: 26px;
+    text-decoration: none;
+    border: solid 2px #FFF;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* About me  */
+.res-about-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 30px;
+    justify-content: space-evenly;
+}
+
+.res-about-image{
+    width: 450px;
+    height: 600px;
+    border: 10px solid #FFF; 
+    box-shadow: 0px 0px 6px 6px #60696e;  
+    border-radius: 10px;  
+}
+
+.res-about-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+/* Animations */
+.res-pulsate {
+    -webkit-animation: pulsate 3s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: .3;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: .3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .3;
+    }
 }
