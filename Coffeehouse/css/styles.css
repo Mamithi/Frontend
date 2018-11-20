@@ -226,5 +226,10 @@ body {
         width:50%;
         background: var(--brown); 
         border-radius: 0.5rem;
+        transition: all 0.3s ease-out;
+    }
+
+    .cs-btn-slide {
+        left: 50%;
     }
 }
