@@ -95,12 +95,42 @@ body {
 
 }
 
+/* Nav button */
+.cs-nav-btn {
+    position: fixed;
+    top:5%;
+    right: 5%;
+    font-size: 3.5rem;
+    color: var(--brightBlue);
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* Nav animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+/* Small screens below 768px */
 @media screen and (max-width:768px) {
     .cs-header {
         background: url('../img/coffee.jpg')center/cover fixed no-repeat;
     }
 }
 
+/* big screens above 768px */
 @media screen and (min-width:768px) {
     .cs-banner-title {
         font-size: 9rem;
