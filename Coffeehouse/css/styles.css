@@ -25,7 +25,22 @@ body {
 .bell-fonts {
     font-family: 'La Belle Aurore', cursive;
 }
-/* end of global styles*/
+/* End of global styles*/
+
+/* Rreloader */
+.cs-preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: var(--grey);
+    z-index: 999;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Header */
 .cs-header {
@@ -108,6 +123,48 @@ body {
     animation-iteration-count: infinite;
 }
 
+/* Nav bar */
+.cs-nav {
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100%;
+    width:10rem;
+    background: rgba(80, 237, 242, 0.9);
+    z-index: 3;
+}
+
+.cs-nav-links {
+    list-style-type: none;
+}
+
+.cs-nav-single-link {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--brown);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.cs-nav-single-link:hover {
+    background: var(--brown);
+    color: rgba(80, 237, 242, 0.9);
+    padding-left: 1.5rem;
+}
+
+.cs-nav-logo:hover {
+    background: var(--grey);
+}
+
+/* Video switch */
+.cs-video-switch-container {
+    display: none;
+}
+
+
 /* Nav animation */
 @keyframes pulse {
     0% {
@@ -126,7 +183,7 @@ body {
 /* Small screens below 768px */
 @media screen and (max-width:768px) {
     .cs-header {
-        background: url('../img/coffee.jpg')center/cover fixed no-repeat;
+        background: url('../img/coffee.jpeg')center/cover fixed no-repeat;
     }
 }
 
@@ -134,5 +191,34 @@ body {
 @media screen and (min-width:768px) {
     .cs-banner-title {
         font-size: 9rem;
+    }
+
+    .cs-video-switch-container {
+        display:block;
+        position: absolute;
+        bottom:5%;
+        right: 5%;
+        z-index: 3;
+    }
+    .cs-video-switch {
+        position: relative;
+        width: 5rem;
+        background: var(--blue);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.25rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+    }
+    
+    .cs-video-switch-btn {
+        position: absolute;   
+        top:0;
+        left:0;
+        height: 100%;
+        width:50%;
+        background: var(--brown); 
+        border-radius: 0.5rem;
     }
 }
