@@ -129,9 +129,15 @@ body {
     top: 0;
     left:0;
     height: 100%;
-    width:10rem;
     background: rgba(80, 237, 242, 0.9);
     z-index: 3;
+    width:0;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+
+.cs-nav-show {
+    width:10rem;
 }
 
 .cs-nav-links {
