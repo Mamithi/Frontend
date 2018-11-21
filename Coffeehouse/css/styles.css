@@ -223,7 +223,94 @@ body {
     margin-top: 1rem;
 }
 
+/* Drink section */
+.cs-drink {
+    background: var(--darkBrown);
+    color: var(--grey);
+    text-transform: capitalize;
+}
 
+.cs-drink-form, .cs-drink-card {
+   text-align: center;
+   display:grid;
+   grid-template-columns: 70%;
+   justify-content: center;
+   grid-row-gap: 1.25rem; 
+}
+
+.cs-drink-form-feedback{
+    border: 0.1rem solid var(--grey);
+    padding: 0.25rem;
+    display:none;
+}
+
+.error {
+    display: block;
+    color: red;
+    border-color: red;
+}
+
+.success {
+    display: block;
+    color: green;
+    border-color: green;
+}
+.cs-drink-form-title, .cs-drink-card-title {
+    font-size:3rem;
+}
+
+.cs-input-name, .cs-input-lastname, .cs-input-email {
+    width:100%;    
+}
+.cs-input-name, .cs-input-lastname, .cs-input-email, .cs-input-submit {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(236, 217, 208, 0.9);
+    color:var(--brown);
+    border:none;
+    outline:none;
+}
+
+.cs-input-name::placeholder, .cs-input-lastname::placeholder, .cs-input-email::placeholder {
+    color:var(--brown);
+    text-transform: capitalize;
+}
+
+.cs-input-submit {
+    background: var(--brown);
+    color: var(--grey);
+    transition:all 0.5s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.cs-input-submit:hover {
+    opacity: 0.8;
+}
+
+.cs-drink-card-list {
+   display: grid;
+   grid-template-columns: 100%;
+   grid-row-gap: 2rem;  
+}
+
+.cs-person {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    text-align: left;
+    grid-gap: 1rem;
+    border: 0.1rem solid rgba(111, 87, 77, 0.6);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.cs-person-thumbnail {
+    border-radius: 50%;
+}
+/* End of drink section */
 
 /* Nav animation */
 @keyframes pulse {
@@ -305,5 +392,10 @@ body {
     }
     .cs-container {
         grid-template-rows: 1fr 1fr;
+    }
+
+    .cs-drink-card-list {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
     }
 }
