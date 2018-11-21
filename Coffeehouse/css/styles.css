@@ -25,6 +25,21 @@ body {
 .bell-fonts {
     font-family: 'La Belle Aurore', cursive;
 }
+
+/* Section padding */
+.cs-section-padding {
+    padding: 3rem 0;
+}
+
+/* grid-container */
+.cs-grid-container {
+    max-width: 90vw;
+    margin: 2rem auto;
+    display:grid;
+    grid-row-gap: 2rem;
+}
+
+
 /* End of global styles*/
 
 /* Rreloader */
@@ -62,6 +77,7 @@ body {
     font-size: 4rem;
     text-transform: capitalize;
     color: var(--brightBlue);
+    
 
 }
 
@@ -170,6 +186,44 @@ body {
     display: none;
 }
 
+/* About section */
+.cs-about-container {
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr;
+    grid-gap: 2rem;
+}
+
+
+.cs-about-img-item {
+   width:100%;
+   display: block; 
+   height: 100%;
+   border-radius: 0.25rem;
+}
+
+.cs-section-title {
+   padding: 1rem 0.5rem; 
+}
+
+.cs-section-title-name {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.cs-setion-title-underline {
+    background: var(--brightBlue);
+    width: 5rem;
+    height: 0.25rem;
+}
+
+.cs-section-title-text {
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+
 
 /* Nav animation */
 @keyframes pulse {
@@ -195,6 +249,19 @@ body {
 
 /* big screens above 768px */
 @media screen and (min-width:768px) {
+    /* Global styles */
+    .cs-grid-container-medium-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4rem;
+
+    }
+
+    .cs-grid-container {
+        max-width: 75vw;
+    }
+    /* End ofg lobal styles */
+
     .cs-banner-title {
         font-size: 9rem;
     }
@@ -231,5 +298,12 @@ body {
 
     .cs-btn-slide {
         left: 50%;
+    }
+
+    .cs-about-img-special {
+        order:-1;
+    }
+    .cs-container {
+        grid-template-rows: 1fr 1fr;
     }
 }
