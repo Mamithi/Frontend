@@ -39,6 +39,10 @@ body {
     grid-row-gap: 2rem;
 }
 
+.cs-section-title-left {
+    margin-left: 10rem;
+}
+
 
 /* End of global styles*/
 
