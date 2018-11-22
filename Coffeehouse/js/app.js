@@ -35,6 +35,19 @@ function eventListeners() {
             ui.showFeedback('some form values are empty', 'error');
        }
     });
+
+    // display modal
+    const links = document.querySelectorAll('.cs-work-icon');
+    links.forEach(function(item) {
+        item.addEventListener('click', function(event) {
+            ui.showModal(event);
+        });
+    });
+
+    // hide modal
+    document.querySelector('.cs-work-modal-close').addEventListener('click', function() {
+        ui.closeModal();
+    })
 }
 
 function UI() {
@@ -123,6 +136,24 @@ UI.prototype.clearFields = function() {
 
 }
 
+// Show modal
+UI.prototype.showModal = function(event) {
+    event.preventDefault();
+    if(event.target.parentElement.classList.contains('cs-work-icon'));
+    let id = event.target.parentElement.dataset.id;
+       
+    const modal = document.querySelector('.cs-work-modal');
+    const modalItem = document.querySelector('.cs-work-modal-item');
+
+    modal.classList.add('cs-work-modal-show');
+    modalItem.style.backgroundImage = `url(img/work${id}.jpg)` 
+    
+}
+
+// hide modal 
+UI.prototype.closeModal = function() {
+    document.querySelector('.cs-work-modal').classList.remove('cs-work-modal-show');
+}
 
 
 
