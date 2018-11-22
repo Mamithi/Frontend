@@ -407,6 +407,43 @@ body {
 
 /* End of work section */
 
+/* Contact section  */
+.cs-contact-container {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-row-gap: 1rem;
+}
+
+.cs-contact-info {
+    display:grid;
+    justify-content: center;
+}
+
+.cs-contact-item {
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+.cs-contact-item-icon {
+    font-size: 3rem;
+    color: var(--brightBlue);
+}
+
+.cs-contact-item-title {
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+    letter-spacing: 0.25rem;
+    font-style: italic;
+}
+
+.cs-contact-item-text {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color:var(--brown);
+}
+/* End of contact section  */
+
 /* Nav animation */
 @keyframes pulse {
     0% {
@@ -498,6 +535,11 @@ body {
         height: 80vh;
         width: 60vw;
     }
+
+    .cs-contact-info {
+        grid-template-columns: repeat(3, 1fr);
+        order: -1;
+    }
 }
 
 @media screen and (min-width:576px) { 
@@ -546,6 +588,21 @@ body {
     }
     .cs-item9 {
         grid-area: nine;
+    }
+
+    .cs-contact-info {
+        grid-template-columns: 1fr;
+        order: 0;
+    }
+
+    .cs-contact-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap:2rem;
+    }
+
+    .cs-contact-map {
+        align-self: center;
     }
 
 }
